@@ -1,0 +1,53 @@
+/* src/styles/ColorPickerModal.css */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  width: 80vw;
+  background: rgb(81, 81, 187);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  color: #ededed;
+}
+
+.color-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.color-option {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+@media (max-width: 499px) {
+  .modal-content {
+    width: 90vw;
+    height: 80vh;
+
+    .color-options {
+      display: flex;
+      flex-direction: row;
+      padding: 10px;
+
+      .color-option {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}

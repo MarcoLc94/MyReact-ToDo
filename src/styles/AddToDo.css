@@ -1,0 +1,32 @@
+form {
+  padding: 10px;
+
+  a {
+    margin: 10px;
+    text-decoration: none;
+  }
+
+  input {
+    height: 15px;
+    border-radius: 5px 5px 5px 5px;
+    margin-bottom: 10px;
+  }
+
+  button {
+    border-radius: 10px 10px 10px 10px;
+    background-color: rgb(0, 229, 229);
+  }
+}
+
+@media (max-width: 459px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    input {
+      width: 70%;
+      margin-bottom: 10px;
+    }
+  }
+}
