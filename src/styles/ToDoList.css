@@ -5,8 +5,12 @@ div {
 .card-container {
   display: flex;
   flex-wrap: wrap;
-  min-height: 55vh;
-  justify-content: space-around;
+  height: 60vh;
+  justify-content: space-around; 
+}
+
+.card-container .card:hover {
+  transform: scale(1.1);
 }
 
 div .card {
@@ -19,15 +23,17 @@ div .card {
   margin: 10px;
   padding: 10px;
 
+
   h2 {
-    font-size: 15px;
+    font-size: 18px;
+    font-weight: 800;
   }
 
   p {
     height: 90%;
     text-align: justify;
     margin: 10px;
-    font-size: 13px;
+    font-size: 16px;
   }
 }
 
@@ -38,10 +44,9 @@ div .card {
   background-color: rgb(255, 255, 168);
 }
 
-@media (max-width: 499px) {
+@media (max-width: 700px) {
   .card-container {
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     min-height: 50vh;
   }

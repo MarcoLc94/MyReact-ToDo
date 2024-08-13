@@ -23,7 +23,7 @@ function App() {
   return (
     <div className="App">
       <h1>
-        My React ToDo <img src="../src/assets/react.svg" alt="" />
+        My React ToDo <img src="/public/react.svg" alt="" />
       </h1>
       <AddToDo setTodos={setTodos} />
       <ToDoCounter count={todos.length} />

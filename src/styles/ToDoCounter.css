@@ -1,13 +1,13 @@
 .titleCounter {
   padding: 30px;
-  height: 20vh;
+  height: 15vh;
   color: rgb(0, 229, 229);
 }
 
 @media (max-width: 500px) {
   div div {
     .titleCounter {
-      padding: 20px;
+      padding: 10px;
       font-size: 18px;
       color: rgb(0, 229, 229);
     }
